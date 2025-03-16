@@ -110,7 +110,19 @@ def heapify(arr, n, i):
         arr[i], arr[largest] = arr[largest], arr[i]
         heapify(arr, n, largest)
 
-
+#希尔排序
+def shell_sort(arr):
+    gap=len(arr)//2
+    while gap > 0:
+        for i in range(gap,len(arr)):
+            key = arr[i]
+            j = i - gap
+            while j >= 0 and key < arr[j]:
+                arr[j+gap]=arr[j]
+                j -= gap
+            arr[j+gap] = key
+        gap //= 2
+    return arr
 
 
 
