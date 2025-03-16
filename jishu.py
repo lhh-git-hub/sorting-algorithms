@@ -31,7 +31,4 @@ def counting_sort(arr):
     return arr
 
 
-# 测试计数排序
-arr = [4, 2, 2, 8, 3, 3, 1]
-sorted_arr = counting_sort(arr)
-print("排序后的数组:", sorted_arr)
+
