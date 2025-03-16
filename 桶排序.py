@@ -20,7 +20,3 @@ def bucket_sort(arr):
     return sorted_arr
 
 
-# 示例用法
-arr = [0.42, 0.32, 0.33, 0.52, 0.37, 0.47, 0.51]
-sorted_arr = bucket_sort(arr)
-print("排序后的数组:", sorted_arr)
